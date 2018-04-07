@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "494387567416",
+    "firebase_url": "https://dotslash-hospi.firebaseio.com",
+    "project_id": "dotslash-hospi",
+    "storage_bucket": "dotslash-hospi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:494387567416:android:da562fb64258a396",
+        "android_client_info": {
+          "package_name": "com.example.harsimar.hospi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "494387567416-cll7f5g2sjv4ik6i3p0236tvfopupe3n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.harsimar.hospi",
+            "certificate_hash": "85042bf8380885444886f294dd00f0302e217722"
+          }
+        },
+        {
+          "client_id": "494387567416-kf8839il39njkrum75b68a88jup34pan.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALjD-e0FzDnorVUTs0d3_a0vPQIYG4UxY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "494387567416-kf8839il39njkrum75b68a88jup34pan.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
