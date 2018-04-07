@@ -44,7 +44,7 @@ static inline uint32_t YUV2RGB(int nY, int nU, int nV) {
 
 extern "C"
 JNIEXPORT void JNICALL
-Java_com_example_harsimar_hyperworkscheckout_ImageUtils_convertYUV420ToARGB8888(
+Java_com_example_harsimar_hospi_ImageUtils_convertYUV420ToARGB8888(
         JNIEnv* env, jclass clazz, jbyteArray y, jbyteArray u, jbyteArray v,
         jintArray output, jint width, jint height, jint y_row_stride,
         jint uv_row_stride, jint uv_pixel_stride, jboolean halfSize) {
@@ -91,7 +91,7 @@ void ConvertYUV420ToARGB8888(const uint8_t* const yData,
 
 extern "C"
 JNIEXPORT jstring JNICALL
-Java_com_example_harsimar_hyperworkscheckout_ClassifierActivity_stringFromJNI(JNIEnv *env,
+Java_com_example_harsimar_hospi_ClassifierActivity_stringFromJNI(JNIEnv *env,
                                                                               jobject instance) {
 
     std::string hello = "Hello from C++";
@@ -101,7 +101,7 @@ Java_com_example_harsimar_hyperworkscheckout_ClassifierActivity_stringFromJNI(JN
 
 extern "C"
 JNIEXPORT jstring JNICALL
-Java_com_example_harsimar_hyperworkscheckout_MainActivity_stringFromJNI(
+Java_com_example_harsimar_hospi_MainActivity_stringFromJNI(
         JNIEnv *env,
         jobject /* this */) {
     std::string hello = "Hello from C++";

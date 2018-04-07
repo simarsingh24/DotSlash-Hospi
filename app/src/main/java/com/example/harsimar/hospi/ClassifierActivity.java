@@ -16,6 +16,7 @@
 
 package com.example.harsimar.hospi;
 
+import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
 import android.graphics.Matrix;
@@ -26,6 +27,7 @@ import android.media.ImageReader.OnImageAvailableListener;
 import android.os.AsyncTask;
 import android.os.Environment;
 import android.os.Trace;
+import android.support.multidex.MultiDex;
 import android.util.Log;
 import android.util.Size;
 import android.view.View;
@@ -344,5 +346,11 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
             e.printStackTrace();
         }
 
+    }
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(newBase);
+        MultiDex.install(this);
     }
 }
