@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.theartofdev.edmodo.cropper.CropImageView
+        android:id="@+id/crop_image_view"
+        android:layout_height="230dp"
+        android:layout_width="340dp"
+        android:layout_gravity="center"
+        tools:layout_editor_absoluteY="232dp"
+        tools:layout_editor_absoluteX="8dp" />
+</LinearLayout>

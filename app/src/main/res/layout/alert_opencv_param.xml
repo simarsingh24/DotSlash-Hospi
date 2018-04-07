@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_layout_alert"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/opencv_dp_tv"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:textSize="20dp"
+        android:padding="8dp"
+        android:text="DP value : "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/opencv_minDist_tv"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/opencv_dp_tv"
+        android:textSize="20dp"
+
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:padding="8dp"
+        android:text="MinDist : "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/opencv_param1_tv"
+        android:layout_width="150dp"
+        android:textSize="20dp"
+
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/opencv_minDist_tv"
+
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:padding="8dp"
+        android:text="Param1 : "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/opencv_param2_tv"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/opencv_param1_tv"
+        android:textSize="20dp"
+
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:padding="8dp"
+        android:text="Param 2 : "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/opencv_minRadius_tv"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/opencv_param2_tv"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:padding="8dp"
+        android:text="MinRadius : "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/opencv_maxRadius_tv"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/opencv_minRadius_tv"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:textSize="20dp"
+
+        android:padding="8dp"
+        android:text="MaxRadius : "
+        android:textStyle="bold" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Enable OPENCV "
+        android:id="@+id/opencv_enable_checkbox"
+        android:layout_below="@id/opencv_maxRadius_tv"/>
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/opencv_dp_et"
+        android:hint="DP"
+        android:textAlignment="1"
+        android:inputType="numberDecimal"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/opencv_dp_tv" />
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/opencv_minDist_et"
+        android:hint="Mindist"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/opencv_dp_et"
+        android:layout_toEndOf="@+id/opencv_minRadius_tv" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/opencv_param1_et"
+        android:hint="Param1"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/opencv_minDist_et"
+        android:layout_toEndOf="@+id/opencv_minRadius_tv" />
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/opencv_param2_et"
+        android:hint="Param2"
+        android:layout_below="@+id/opencv_param1_et"
+        android:inputType="numberDecimal"
+        android:layout_toEndOf="@+id/opencv_param2_tv" />
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/opencv_minRadius_et"
+        android:hint="MinRadius"
+        android:layout_below="@+id/opencv_param2_et"
+        android:inputType="number"
+        android:layout_toEndOf="@+id/opencv_minRadius_tv" />
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/opencv_minRadius_et"
+        android:id="@+id/opencv_maxRadius_et"
+        android:hint="maxRadius"
+        android:inputType="number"
+        android:layout_toEndOf="@+id/opencv_maxRadius_tv" />
+</RelativeLayout>
