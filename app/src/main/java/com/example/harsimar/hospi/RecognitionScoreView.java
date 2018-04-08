@@ -44,4 +44,24 @@ public class RecognitionScoreView extends View implements ResultsView {
     bgPaint.setColor(0xcc4285f4);
   }
 
+    @Override
+    public void setResults(final List<Classifier.Recognition> results) {
+        this.results = results;
+        postInvalidate();
+    }
+
+    @Override
+    public void onDraw(final Canvas canvas) {
+        final int x = 10;
+        int y = (int) (fgPaint.getTextSize() * 1.5f);
+
+        canvas.drawPaint(bgPaint);
+
+        if (results != null) {
+            for (final Classifier.Recognition recog : results) {
+                canvas.drawText(recog.getTitle() + ": " + recog.getConfidence(), x, y, fgPaint);
+                y += fgPaint.getTextSize() * 1.5f;
+            }
+        }
+  }
 }
